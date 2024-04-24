@@ -1,7 +1,7 @@
 export default async function fetchQuery(x, y) {
     
     async function fetchPhotos(date, rover) {
-        const apiKey = `${process.env.NASA_API_KEY}`
+        const apiKey = process.env.NASA_API_KEY
         // console.log(apiKey)
         
         const result = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/` + rover + `/photos?earth_date=` + date + `&api_key=` + apiKey)
