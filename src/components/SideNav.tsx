@@ -7,12 +7,12 @@ import { josefin_sans } from "@/app/fonts"
 export default function SideNav() {
 
     const showNav = () => {
-        if(document.getElementById('my-info').style.display == 'none') {
-            document.getElementById('nasa-rovers').style.display = "block"
-            document.getElementById('my-info').style.display = "block"
+        if(document.getElementById('my-info')!.style.display == 'none') {
+            document.getElementById('nasa-rovers')!.style.display = "block"
+            document.getElementById('my-info')!.style.display = "block"
         } else if(document.getElementById('my-info')?.style.display == 'block') {
-            document.getElementById('nasa-rovers').style.display = "none"
-            document.getElementById('my-info').style.display = "none"
+            document.getElementById('nasa-rovers')!.style.display = "none"
+            document.getElementById('my-info')!.style.display = "none"
         }
     }
     
