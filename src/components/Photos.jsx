@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import "../app/globals.css"
 import { orbitron, josefin_sans } from "@/app/fonts"
+import Image from "next/image"
 
 
 export default function Photos({ param1, param2 }) {
@@ -27,7 +28,7 @@ export default function Photos({ param1, param2 }) {
                     return (
                         <Link href={item.img_src} key={item.id} target="_blank">
                             <div className="m-5 rounded-xl relative justify-center text-transparent font-bold hover:text-gray-100">
-                                <img
+                                <Image
                                     src={item.img_src}
                                     alt=""
                                     className="rounded-xl transition-all duration-500 hover:scale-110 hover:-rotate-2 hover:opacity-70 w-[60vw] sm:w-[30vw] md:w-[15vw]"
