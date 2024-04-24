@@ -3,16 +3,22 @@ import "../app/globals.css"
 import Link from "next/link"
 import { orbitron } from "@/app/fonts"
 import { josefin_sans } from "@/app/fonts"
+import { useState } from "react"
+
 
 export default function SideNav() {
-
+    const [checker, setChecker] = useState(false)
     const showNav = () => {
-        if(document.getElementById('my-info')!.style.display == 'none') {
-            document.getElementById('nasa-rovers')!.style.display = "block"
+        console.log(checker)
+        if(checker == false) {
             document.getElementById('my-info')!.style.display = "block"
-        } else if(document.getElementById('my-info')?.style.display == 'block') {
-            document.getElementById('nasa-rovers')!.style.display = "none"
+            document.getElementById('nasa-rovers')!.style.display = "block"
+            setChecker(true)
+            
+        }else if(checker == true) {
             document.getElementById('my-info')!.style.display = "none"
+            document.getElementById('nasa-rovers')!.style.display = "none"
+            setChecker(false)
         }
     }
     

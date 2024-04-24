@@ -30,8 +30,10 @@ export default function Photos({ param1, param2 }) {
                             <div className="m-5 rounded-xl relative justify-center text-transparent font-bold hover:text-gray-100">
                                 <Image
                                     src={item.img_src}
+                                    width={'60'}
+                                    height={'100'}
+                                    className="rounded-xl transition-all duration-500 hover:scale-110 hover:-rotate-2 hover:opacity-70 w-[60vw] sm:w-[30vw] md:w-[15vw]" 
                                     alt=""
-                                    className="rounded-xl transition-all duration-500 hover:scale-110 hover:-rotate-2 hover:opacity-70 w-[60vw] sm:w-[30vw] md:w-[15vw]"
                                 />
                                 <div className="absolute top-0 text-center md:h-[100%] w-[100%] p-1 md:p-2 rounded-xl md:bg-transparent hover:bg-slate-800 ">
                                     <h1 className={`text-xs md:text-base my-1 lg:my-3 ${josefin_sans.className}`}>Captured by {item.camera.full_name}</h1>
