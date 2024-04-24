@@ -26,7 +26,7 @@ export default function SideNav() {
         <div className="relative w-[100vw]  md:float-left md:h-[100%] md:w-[20vw] bg-red-800 md:fixed p-5 text-center md:text-left">
             <div>
                 <Link href="/"><h1 className={`text-white text-xl md:text-3xl ${orbitron.className}`}>Mars Spotter</h1></Link>
-                <span className={`${josefin_sans.className}`}>Enjoy the sights of Mars from NASA's Rovers.</span>
+                <span className={`${josefin_sans.className}`}>Enjoy the sights of the Red Planet from NASA's Rovers.</span>
             </div>
             <div className={`mt-10 md:mt-20 text-xs md:text-base hidden md:block ${josefin_sans.className}`} id="nasa-rovers">
                 <h1>The ROVERS</h1>
@@ -48,7 +48,7 @@ export default function SideNav() {
 
             <div className="md:absolute md:bottom-5 hidden md:block" id="my-info">
                 <h1 className="text-sm">Built by <a href="https://judithyusuf.netlify.app" target="_blank" className="underline font-semibold">Judith Yusuf</a></h1>
-                <span className="text-xs">View source code on <a href="#" className="underline">Github</a></span>
+                <span className="text-xs">View source code on <a href="https://github.com/judithlk/mars-spotter" className="underline">Github</a></span>
             </div>
                 <div className="md:hidden mx-3 mt-3 " onClick={showNav}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

@@ -11,7 +11,7 @@ export default function Home() {
   //console.log(query)
 
   return (
-    <div className="w-[100vw] md:w-[78vw] md:ml-[20vw] container pb-0">
+    <div className="w-[100vw] md:w-[78vw] md:ml-[20vw] container pb-0 text-red-700">
       <Search {...{query, setQuery}} />
       <Photos param1={query.date} param2={query.rover}  />     
     </div>
