@@ -9,11 +9,11 @@ export default async function Rover({params,} : {params: {slug: string}}) {
     const url = 'https://en.wikipedia.org/wiki/' + rover.name + '_(rover)'
     
     return (
-        <div className={`w-[100%]md:w-[78vw] md:ml-[20vw] p-10 text-xl ${josefin_sans.className}`}>
+        <div className={`text-red-600 w-[100%]md:w-[78vw] md:ml-[20vw] p-10 text-xl ${josefin_sans.className}`}>
             <h1 className={`text-2xl ${orbitron.className}`}>{rover.name}</h1>
             <h1>Launched on: {rover.launch_date}</h1>
             <h1>Landed on: {rover.landing_date}</h1>
-            <h1>It is curently {rover.status}</h1>
+            <h1>It is currently {rover.status}</h1>
             <span>{rover.name} has taken a total of {rover.total_photos} photos since its launch date.</span>
             <h1>Date of most recent photos: {rover.max_date}</h1>
             <span>Read more about {rover.name} <a href={url} target="_blank">here</a></span>
